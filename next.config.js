@@ -1,4 +1,5 @@
-const config = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   webpack5: true,
 }
 
@@ -7,4 +8,4 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
 
-module.exports = withBundleAnalyzer(config)
+module.exports = withBundleAnalyzer(nextConfig)
